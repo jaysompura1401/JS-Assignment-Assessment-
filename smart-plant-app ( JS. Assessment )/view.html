@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Greentech - Reports</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>🌱 Urban Greentech</h1>
+        <div>
+            <button id="themeToggle">🌙 Dark Mode</button>
+            <a href="index.html" class="nav-link">Back to Form</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h2>Submitted Reports</h2>
+            <p id="lastViewedMsg"></p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search by Plant Name or Location...">
+        </div>
+
+        <div id="reportsGrid" class="reports-grid">
+            </div>
+        
+        <p id="noDataMsg" class="hidden" style="text-align: center; margin-top: 2rem;">No data found matching your criteria.</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

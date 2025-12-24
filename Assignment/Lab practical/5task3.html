@@ -1,0 +1,29 @@
+<!-- Task 3: 
+o Write a do-while loop that continues to ask the user for input until they enter a 
+number greater than 10.  -->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Do-While Loop Example</title>
+</head>
+
+<body>
+    <h2>Do-While Loop Example</h2>
+    <p id="output"></p>
+
+    <script>
+        let num;
+
+        do {
+            num = Number(prompt("Enter a number greater than 10:"));
+        } while (num <= 10);
+
+
+        document.getElementById("output").innerHTML = "You entered: " + num;
+    </script>
+</body>
+
+</html>

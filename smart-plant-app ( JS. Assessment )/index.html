@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Greentech - Plant Care</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h1>🌱 Urban Greentech</h1>
+        <div>
+            <button id="themeToggle">🌙 Dark Mode</button>
+            <a href="view.html" class="nav-link">View Reports</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header>
+            <h2>New Plant Care Report</h2>
+
+        </header>
+
+        <div id="messageBox" class="message-box hidden"></div>
+
+        <form id="plantForm">
+            <div class="form-group">
+                <label for="plantName">Plant Name</label>
+                <input type="text" id="plantName" name="plantName" placeholder="e.g., Monstera Deliciosa">
+                <span class="error-text" id="error-plantName"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="plantLocation">Location in Home</label>
+                <select id="plantLocation" name="plantLocation">
+                    <option value="">Select Location</option>
+                    <option value="Balcony">Balcony</option>
+                    <option value="Bedroom">Bedroom</option>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Living Room">Living Room</option>
+                    <option value="Bathroom">Bathroom</option>
+                </select>
+                <span class="error-text" id="error-plantLocation"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="waterFrequency">Watering Frequency (days)</label>
+                <input type="number" id="waterFrequency" name="waterFrequency" placeholder="e.g., 7">
+                <span class="error-text" id="error-waterFrequency"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="lastWatered">Last Watered Date</label>
+                <input type="date" id="lastWatered" name="lastWatered">
+                <span class="error-text" id="error-lastWatered"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="plantNotes">Plant Condition Notes</label>
+                <textarea id="plantNotes" name="plantNotes" rows="4"
+                    placeholder="Describe the plant's health..."></textarea>
+                <span class="error-text" id="error-plantNotes"></span>
+            </div>
+
+            <button type="submit" class="btn-primary">Submit Report</button>
+        </form>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
